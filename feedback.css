@@ -1,0 +1,25 @@
+*{
+font-family: "Poppins";
+}
+body{
+    background-image: url("hill.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px) 
+    
+}
+form{
+    /* text-align: center; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+
+}
+.bg{
+    border-radius: 1px;
+    background-color: azure;
+    box-sizing:content-box;
+
+}
+

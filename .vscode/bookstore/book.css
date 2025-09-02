@@ -1,0 +1,13 @@
+
+table, th,td{
+    border: 1px black solid;
+    width: 100%;
+}
+#main{
+    text-decoration: none;
+    color: black;
+    margin: 0 500 0 500;
+}
+#website{
+    width: 500px;
+}

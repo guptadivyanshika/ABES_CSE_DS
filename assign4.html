@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <div id="form">
+        <h1><center>Login Form</center></h1>
+        <form action="action.php" method="get">
+            <label for="username" >Username:</label>
+            <input type="text" placeholder="username" id="username">
+            <br><br>
+            <label for="password">Password:</label> 
+            <input type="password" placeholder="password" id="password">
+            <br>
+            <br>
+            <p>Select your gender</p>
+            <label for="xyz">Female</label>
+            <input type="radio" id="xyz" name="gender"><br>
+            <label for="html">Male</label>
+            <input type="radio" id="html" name="gender"><br>
+            <label for="js">Other</label>
+            <input type="radio" id="js" name="gender">
+            <br><br>
+            <label for="label">Your Views:</label><br>
+            <textarea id="label" rows="5" cols="3" name="textarea">Feedback</textarea><br><br>
+            <select>
+                <option value="cse">CSE</option>
+                <option value="cs">CS</option>
+                <option value="ece">ECE</option><br><br>
+           </select>    
+            <p>Select your subject</p>
+            <ul>
+            <label for="html" >HTML</label> 
+            <input type="checkbox" id="html" name="html">
+            <label for="css" >CSS</label> 
+            <input type="checkbox" id="css" name="html">
+            <label for="js" >JS</label> 
+            <input type="checkbox" id="js" name="html">
+            </ul><br><br>
+            <button>Submit</button>
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>

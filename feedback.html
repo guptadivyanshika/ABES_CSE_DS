@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <form class="bg">
+        <h1><center>Survey Form</center></h1>
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="" id="name">
+            
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="" id="email">
+            </li>
+            <li>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="" id="password">
+            </li>
+        </ul>
+        <ul>
+            <li>Please check all the emotions that apply to you:</li>
+            <ul>
+                <li>
+                    <label for="angry">Angry</label>
+                    <input type="checkbox" id="angry" name="emotion">
+                </li>
+                <li>
+                    <label for="sad" >Sad</label>
+                    <input type="checkbox" id="sad" name="emotion">
+                </li>
+                <li>
+                    <label for="happy">Happy</label>
+                    <input type="checkbox" id="happy" name="emotion">
+                </li>
+                <li>
+                    <label for="ambivalent">Ambivalent</label>
+                    <input type="checkbox" id="ambivalent" name="emotion">
+                </li>
+            </ul>
+       </ul>
+       <ul>
+        <li>How satisfied were you with our service?</li>
+            <ul>
+             <li> <label for="sat">Satisfied</label>
+              <input type="checkbox" id="sat" name="sat"></li>
+              <li>
+                <label for="very">Very Satisfied</label>
+                <input type="checkbox" id="very" name="sat">
+              </li>
+              <li>
+                <label for="did">Didn't care</label>
+                <input type="checkbox" id="did" name="sat">
+              </li>
+              <li>
+                <label for="dis">Dissatisfied</label>
+                <input type="checkbox" id="dis" name="sat">
+              </li>
+              <li>
+                <label for="vdis">Very dissatisfied</label>
+                <input type="checkbox" id="vdis" name="sat">
+              </li>
+            </ul>
+       </ul>
+       <ul>
+       <li>
+       <label for="label">Further comments:</label>
+            <textarea id="label" rows="3" cols="15" name="textarea"></textarea>
+        </li>
+       </ul>
+        <ul>
+            <li>
+                 <label for="photo">Bio photo:</label>
+                <textarea id="photo" rows="1" cols="10" name="textarea"></textarea>
+                <button>Choose...</button>
+            </li>
+        </ul>
+        <ul>
+            <li>Location visited:</li>
+            <select>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="lucknow">Lucknow</option>
+           </select>
+        </ul> 
+        <ul>
+            <li><button>submit</button></li>
+        </ul>  
+        
+    </form>
+    
+</body>
+</html>

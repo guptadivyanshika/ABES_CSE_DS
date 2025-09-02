@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your free gallery and start selling your art on ArtHive">
+    <title>Sell Your Art | ArtHive</title>
+    <style>
+        /* Base styles */
+        :root {
+            /* Modern Design Variables */
+            --primary-color-modern: #2a9d8f;
+            --secondary-color-modern: #264653;
+            --accent-color-modern: #e9c46a;
+            
+            /* Minimal Design Variables */
+            --primary-color-minimal: #000000;
+            --secondary-color-minimal: #ffffff;
+            --accent-color-minimal: #f0f0f0;
+            
+            /* Vibrant Design Variables */
+            --primary-color-vibrant: #ff6b6b;
+            --secondary-color-vibrant: #4ecdc4;
+            --accent-color-vibrant: #ffe66d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Layout Components */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color-modern);
+        }
+
+        .main {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .left {
+            flex: 1;
+            background-image: url('login.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            border-radius: 8px;
+        }
+
+        .right {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .feature {
+            margin-bottom: 2rem;
+        }
+
+        .feature h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color-modern);
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Form Styles */
+        .form-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color-modern);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary-color-modern);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color-modern);
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color-modern);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: var(--secondary-color-modern);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .login-link a {
+            color: var(--primary-color-modern);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--accent-color-modern);
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--secondary-color-modern);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            color: var(--primary-color-modern);
+        }
+
+        footer p {
+            margin-top: 1rem;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .left {
+                min-height: 300px;
+            }
+
+            .form-container {
+                margin: 2rem 1rem;
+            }
+        }
+
+        /* Theme Variations */
+        .theme-minimal {
+            --primary-color-modern: var(--primary-color-minimal);
+            --secondary-color-modern: var(--primary-color-minimal);
+            --accent-color-modern: var(--accent-color-minimal);
+        }
+
+        .theme-vibrant {
+            --primary-color-modern: var(--primary-color-vibrant);
+            --secondary-color-modern: var(--secondary-color-vibrant);
+            --accent-color-modern: var(--accent-color-vibrant);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Your Free Gallery and Sell Your Art</h1>
+        </header>
+
+        <main class="main">
+            <div class="left" role="img" aria-label="Gallery showcase image"></div>
+            
+            <div class="right">
+                <div class="feature">
+                    <h2>It's free and easy</h2>
+                    <p>No membership fees. No commission. Start selling in minutes. Completely free with unlimited space to sell all of your art!</p>
+                </div>
+
+                <div class="feature">
+                    <h2>Get paid instantly</h2>
+                    <p>Instantly accept Visa, MasterCard, Discover, American Express, eChecks, PayPal, and more. Simple, easy, and secure.</p>
+                </div>
+
+                <div class="feature">
+                    <h2>Sell your art</h2>
+                    <p>Sell paintings, prints, originals, photography, & more.</p>
+                </div>
+
+                <div class="feature">
+                    <h2>Sell originals & use Print-on-Demand</h2>
+                    <p>ArtHive handles all your printing and shipping with no cost to you. Sell more, with less work!</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="form-container">
+            <h2>Create Your Free Gallery</h2>
+            <form id="gallery-form">
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="retype-email">Retype Email</label>
+                    <input type="email" id="retype-email" name="retype-email" required 
+                           placeholder="Retype your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" required 
+                           placeholder="Create a password">
+                </div>
+
+                <button type="submit" class="submit-button">Create your Free Gallery</button>
+            </form>
+            <p class="login-link">Already a member? <a href="#">Login</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>© 2024 ArtHive</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+div.div1{
+    height: 100px;
+    width: 100px;
+}
+div.div2{
+    height: 100px;
+    width: 100px;
+}
+div.div3{
+    height: 100px;
+    width: 100px;
+}
+div.div4{
+    height: 100px;
+    width: 100px;
+}
+div.div5{
+    height: 100px;
+    width: 100px;
+}
+div.parent{
+    height: 300px;
+    width: 300px;
+    background-color: cornsilk;
+    border:2px black solid ;
+    position: relative;
+}
+.div1{
+    background-color: aqua;
+    border: 1px solid black;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.div2{
+    background-color: plum;
+    border: 1px solid black;
+    position:absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+
+}
+.div3{
+    background-color: palevioletred;
+    border: 1px solid black;
+    position:absolute;
+    bottom:0px ;
+    right: 0px;
+}
+.div4{
+    background-color: bisque;
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.div5{
+    background-color: bisque;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+        

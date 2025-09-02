@@ -1,0 +1,56 @@
+div{
+    height: 100px;
+    width: 100px;
+
+}
+div.red{
+    height: 100px;
+    width: 100px;
+}
+div.blue{
+    height: 100px;
+    width: 100px;
+}
+div.pink{
+    height: 100px;
+    width: 100px;
+}
+div.green{
+    height: 100px;
+    width: 100px;
+}
+div.parent{
+    height: 300px;
+    width: 300px;
+    background-color: cornsilk;
+    border:2px black solid ;
+    position: relative;
+}
+.red{
+    background-color: cadetblue;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px black solid;
+}
+.blue{
+    background-color: chocolate;
+    border: 2px black solid;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+.pink{
+    background-color: paleturquoise;
+    border: 2px black solid;
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.green{
+    background-color: coral;
+    border: 2px black solid;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+}
