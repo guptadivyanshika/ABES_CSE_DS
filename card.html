@@ -3,9 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Food Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fffceb;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: darkblue;
+      font-size: 2rem;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .food {
+      border: 2px solid darkblue;
+      height: 280px;
+      width: 220px;
+      background-color: #ffe4ec;
+      text-align: center;
+      border-radius: 15px;
+
+    }
+
+    .food img {
+      height: 120px;
+      width: 120px;
+      margin-top: 15px;
+      border-radius: 12px;
+    }
+
+    .food h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: darkblue;
+    }
+
+    .rating {
+      color: gold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      background-color: darkblue;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 6px;
+      color: white;
+      font-size: 0.9rem;
+
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>Food Menu</h1>
+  <div class="main">
+    <div class="food">
+      <img src=" bur.png" alt="burger">
+      <h3>Burger</h3>
+      <span class="rating">★★★★★</span>
+      <section class="buttons">
+        <button>Buy</button>
+        <button>Add to Cart</button>
+      </section>
+    </div>
+
+    <div class="food">
+      <img src="momo.png" alt="Momos">
+      <h3>Momos</h3>
+      <span class="rating">★★★★☆</span>
+      <section class="buttons">
+        <button>Buy</button>
+        <button>Add to Cart</button>
+      </section>
+    </div>
+
+        <div class="food">
+      <img src="cd.png" alt="colddrink">
+      <h3>Cold Drink</h3>
+      <span class="rating">★★★★☆</span>
+      <section class="buttons">
+        <button>Buy</button>
+        <button>Add to Cart</button>
+      </section>
+    </div>
+
+    <div class="food">
+      <img src="pizzza.png" alt="pizza">
+      <h3>Pizza</h3>
+      <span class="rating">★★★☆☆</span>
+      <section class="buttons">
+        <button>Buy</button>
+        <button>Add to Cart</button>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
